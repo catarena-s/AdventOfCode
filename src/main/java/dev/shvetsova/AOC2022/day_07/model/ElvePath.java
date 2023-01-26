@@ -1,11 +1,13 @@
 package dev.shvetsova.AOC2022.day_07.model;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
 public class ElvePath extends FileSystemObject implements Comparable<ElvePath> {
-    List<ElveFile> includedFiles = new ArrayList<>();
-    List<ElvePath> includedPath = new ArrayList<>();
+    private final List<ElveFile> includedFiles = new ArrayList<>();
+    private final List<ElvePath> includedPath = new ArrayList<>();
 
     public ElvePath(String name) {
         super(name);
@@ -15,25 +17,9 @@ public class ElvePath extends FileSystemObject implements Comparable<ElvePath> {
         super(name, path);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public ElvePath getPath() {
-        return path;
-    }
-
     @Override
     public String toString() {
         return name + "(dir) : " + getSize();
-    }
-
-    public List<ElveFile> getIncludedFiles() {
-        return includedFiles;
-    }
-
-    public List<ElvePath> getIncludedPath() {
-        return includedPath;
     }
 
     public void add(FileSystemObject obj) {

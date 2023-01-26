@@ -1,22 +1,17 @@
 package dev.shvetsova.AOC2022.day_11.model;
 
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
 import java.util.function.LongBinaryOperator;
-
+@Getter
+@RequiredArgsConstructor
 public enum Operation implements LongBinaryOperator {
-    ADD("\\+", (a, b) -> a + b),
+    ADD("\\+", Long::sum),
     MULT("\\*", (a, b) -> a * b);
-
-    public String getSing() {
-        return sing;
-    }
 
     private final String sing;
     private final LongBinaryOperator operator;
-
-    Operation(String sing, LongBinaryOperator operator) {
-        this.sing = sing;
-        this.operator = operator;
-    }
 
     public static Operation get(String o) {
         if (o.contains("+")) return ADD;

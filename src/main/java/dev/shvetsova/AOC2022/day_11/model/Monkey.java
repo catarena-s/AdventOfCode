@@ -1,5 +1,12 @@
 package dev.shvetsova.AOC2022.day_11.model;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@EqualsAndHashCode
 public class Monkey implements Comparable<Monkey> {
     private final WorryLevel worryLevel = new WorryLevel();
     private long countTest = 0;
@@ -9,29 +16,6 @@ public class Monkey implements Comparable<Monkey> {
     private Monkey ifTrue;
     private Monkey ifFalse;
     private int div;
-    public Monkey() {
-    }
-
-    public int getDiv() {
-        return div;
-    }
-
-    public void setDiv(int div) {
-        this.div = div;
-    }
-
-    public void setIfTrue(Monkey ifTrue) {
-        this.ifTrue = ifTrue;
-    }
-
-    public void setIfFalse(Monkey ifFalse) {
-        this.ifFalse = ifFalse;
-    }
-
-    public long getCountTest() {
-        return countTest;
-    }
-
     public WorryLevel getThings() {
         return worryLevel;
     }

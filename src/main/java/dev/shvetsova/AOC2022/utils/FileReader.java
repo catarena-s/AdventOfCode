@@ -11,8 +11,4 @@ public class FileReader {
     public static String readLine(Path file) throws IOException {
         return Files.readString(Path.of(file.toString()));
     }
-
-    public static String[] readLines(Path file, String separator) throws IOException {
-        return Files.readString(Path.of(file.toString())).split(separator);
-    }
 }

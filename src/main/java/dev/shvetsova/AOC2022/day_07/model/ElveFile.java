@@ -1,16 +1,16 @@
 package dev.shvetsova.AOC2022.day_07.model;
 
-public class ElveFile extends FileSystemObject {
-    Long size;
+import lombok.Getter;
 
-    public Long getSize() {
-        return size;
-    }
+@Getter
+public class ElveFile extends FileSystemObject {
+    private final Long size;
 
     public ElveFile(String name, ElvePath path, Long size) {
-        super(name,path);
+        super(name, path);
         this.size = size;
     }
+
     @Override
     public String toString() {
         return "'" + name + '\'' + " , " + size;

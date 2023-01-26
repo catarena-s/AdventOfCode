@@ -3,7 +3,6 @@ package dev.shvetsova.AOC2022.day_06;
 import dev.shvetsova.AOC2022.Puzzle;
 import dev.shvetsova.AOC2022.utils.Printer;
 
-import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.List;
@@ -13,10 +12,10 @@ public class Day06 extends Puzzle {
     public static void main(String[] args) {
         Day06 puzzle = new Day06();
         //test input ------------------------------------------
-//        puzzle.execute(true, true);//task 1
+        puzzle.execute(true, true, 4);//task 1
         puzzle.execute(true, false, 14);//task 2
         //puzzle input ----------------------------------------
-//         puzzle.execute(false, true,7); //task 1
+        puzzle.execute(false, true, 4); //task 1
         puzzle.execute(false, false, 14); //task 2
     }
 

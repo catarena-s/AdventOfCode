@@ -4,8 +4,6 @@ import dev.shvetsova.AOC2022.Puzzle;
 import dev.shvetsova.AOC2022.day_08.model.Forest;
 import dev.shvetsova.AOC2022.utils.Printer;
 
-import java.io.IOException;
-
 /**
  * --- Day 5: Treetop Tree House ---
  **/

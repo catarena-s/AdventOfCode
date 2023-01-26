@@ -1,26 +1,16 @@
 package dev.shvetsova.AOC2022.day_01;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Objects;
 
+@Getter
+@EqualsAndHashCode
 public class ElfCalories extends HashMap<Integer, Integer> {
-    int maxCalories = 0;
-    int elfHasMostCalories = 0;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        ElfCalories that = (ElfCalories) o;
-        return maxCalories == that.maxCalories && elfHasMostCalories == that.elfHasMostCalories;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), maxCalories, elfHasMostCalories);
-    }
+    private int maxCalories = 0;
+    private int elfHasMostCalories = 0;
 
     public void init(final String[] lines) {
         int totalCalories = 0;

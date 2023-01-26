@@ -1,9 +1,12 @@
 package dev.shvetsova.AOC2022.day_05.model;
 
+import lombok.Getter;
+
+@Getter
 public class Command {
-    int move;
-    int from;
-    int to;
+    private int move;
+    private int from;
+    private int to;
 
     public Command(String line) {
         String[] split = line.split(" ");

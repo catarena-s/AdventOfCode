@@ -4,8 +4,6 @@ import dev.shvetsova.AOC2022.Puzzle;
 import dev.shvetsova.AOC2022.day_07.model.FileSystem;
 import dev.shvetsova.AOC2022.utils.Printer;
 
-import java.io.IOException;
-
 /**
  * --- Day 7: No Space Left On Device ---
  **/

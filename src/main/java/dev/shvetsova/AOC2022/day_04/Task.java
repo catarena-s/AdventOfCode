@@ -19,9 +19,5 @@ public class Task {
     boolean compare(Task t) {
         setNumbers.retainAll(t.setNumbers);
         return !setNumbers.isEmpty();
-                /*((A == t.A) || (A == t.B) || (B == t.A) || (B == t.B) ||
-                (A < t.A && t.A < B) || (B > t.A && B < t.B) ||
-                (t.A < A && A < t.B) || (t.B > A && t.B < B) ||
-                (A < t.A && t.B < B) || (t.A < A && t.B > B));*/
     }
 }

@@ -3,7 +3,6 @@ package dev.shvetsova.AOC2022.day_03.model;
 import java.util.HashMap;
 
 public class Priority extends HashMap<Character, Integer> {
-
     public Priority() {
        init('a', 1);
        init('A', 27);

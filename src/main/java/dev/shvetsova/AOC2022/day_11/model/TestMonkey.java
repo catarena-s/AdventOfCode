@@ -7,18 +7,8 @@ public class TestMonkey {
     private final Map<Integer, Monkey> monkeys = new HashMap<>();
 
     public TestMonkey(String[] inputLines) {
-        ParserImpl parser = new ParserImpl();
+        Parser parser = new Parser();
         for (int i = 0; i < inputLines.length; i += 7) {
-//            String line = inputLines[i];
-//            if (line.isBlank()) continue;
-//            if (line.toLowerCase().contains("monkey")) {
-//                String monkeyNum = line.trim().replace(":", "");
-//                int num = Integer.parseInt(monkeyNum.toLowerCase().replace("monkey ", "").trim());
-//                current = monkeys.getOrDefault(num, new Monkey(monkeyNum.toLowerCase()));
-//                monkeys.put(num, current);
-//                continue;
-//            }
-//            i = parser.parse(inputLines, current, i, monkeys);
             parser.initMonkey(inputLines, i, monkeys);
         }
     }

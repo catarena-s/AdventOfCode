@@ -1,8 +1,12 @@
 package dev.shvetsova.AOC2022.day_07.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
+@Setter
 public class FileSystem {
     private static final int SIZE = 100_000;
     private static final long ENOUGH = 30_000_000;
@@ -40,14 +44,6 @@ public class FileSystem {
                 .getSize();
     }
 
-    void setCurrent(ElvePath current) {
-        this.current = current;
-    }
-
-    ElvePath getCurrent() {
-        return current;
-    }
-
     void addFile(String name, Long size) {
         ElveFile f = new ElveFile(name, current, size);
         current.add(f);
@@ -57,10 +53,6 @@ public class FileSystem {
         ElvePath p = new ElvePath(name, current);
         current.add(p);
         listPath.add(p);
-    }
-
-    ElvePath getHead() {
-        return head;
     }
 
     private long getSize() {

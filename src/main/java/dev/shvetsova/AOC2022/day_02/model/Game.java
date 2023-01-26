@@ -1,13 +1,11 @@
 package dev.shvetsova.AOC2022.day_02.model;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class Game {
     private final String you;
     private final String partner;
-
-    public Game(String you, String partner) {
-        this.you = you;
-        this.partner = partner;
-    }
 
     public int getResultStrategyOne() {
         RockPaperScissors elf = RockPaperScissors.get(partner);
