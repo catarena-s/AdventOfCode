@@ -1,8 +1,8 @@
 ## 🎄 Advent of Code 2022 🎄 
-![Java](https://img.shields.io/badge/java-17-%23ED8B00.svg?style=flat&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-17-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
 ![Lombok](https://img.shields.io/badge/Lombok-1.18.24-red.svg?style=flat&logo=Lombok&logoColor=white)
-![intelljIdea](https://img.shields.io/badge/intellj_Idea-v2022.12-blue.svg?style=flat&logo=intelljIdea&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-v3.8.1-green.svg?style=flat&logo=Maven&logoColor=white)
+![intelljIdea](https://img.shields.io/badge/intellj_Idea-v2022.12-blue.svg?style=flat&logo=intellij-idea&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-v3.8.1-green.svg?style=flat&logo=ApacheMaven&logoColor=white)
 
 The repo contains my Advent of Code 2022 solutions in Java 17.<br>
 Solutions to some coding problems for [Advent of Code'22](https://adventofcode.com/2022).<br>
